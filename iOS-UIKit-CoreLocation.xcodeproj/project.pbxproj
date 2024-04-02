@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A43D6CE664D65D24036EFE6 /* libPods-iOS-UIKit-CoreLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B7D769BA09B06ACC7A5669 /* libPods-iOS-UIKit-CoreLocation.a */; };
 		B5714D4D2BBAFCDB00DFEEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D4C2BBAFCDB00DFEEE3 /* AppDelegate.swift */; };
 		B5714D4F2BBAFCDB00DFEEE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D4E2BBAFCDB00DFEEE3 /* SceneDelegate.swift */; };
-		B5714D512BBAFCDB00DFEEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D502BBAFCDB00DFEEE3 /* ViewController.swift */; };
-		B5714D542BBAFCDB00DFEEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5714D522BBAFCDB00DFEEE3 /* Main.storyboard */; };
+		B5714D512BBAFCDB00DFEEE3 /* CoreLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D502BBAFCDB00DFEEE3 /* CoreLocationViewController.swift */; };
 		B5714D562BBAFCDE00DFEEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5714D552BBAFCDE00DFEEE3 /* Assets.xcassets */; };
 		B5714D592BBAFCDE00DFEEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5714D572BBAFCDE00DFEEE3 /* LaunchScreen.storyboard */; };
+		B5714D622BBAFE2900DFEEE3 /* CoreLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D612BBAFE2900DFEEE3 /* CoreLocationViewModel.swift */; };
+		B5714D672BBB806900DFEEE3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D662BBB806900DFEEE3 /* ViewModel.swift */; };
+		B5714D692BBB80CF00DFEEE3 /* CoreLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D682BBB80CF00DFEEE3 /* CoreLocationUseCase.swift */; };
+		B5714D6B2BBB811A00DFEEE3 /* BusStopInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D6A2BBB811A00DFEEE3 /* BusStopInfoRepository.swift */; };
+		B5714D6D2BBB822D00DFEEE3 /* BusStopListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D6C2BBB822D00DFEEE3 /* BusStopListDTO.swift */; };
+		B5714D6F2BBB842400DFEEE3 /* BusStopInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D6E2BBB842400DFEEE3 /* BusStopInfoResponse.swift */; };
+		B5714D712BBB883600DFEEE3 /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D702BBB883600DFEEE3 /* LocationResponse.swift */; };
+		B5714D732BBB887E00DFEEE3 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5714D722BBB887E00DFEEE3 /* LocationService.swift */; };
+		B5714D752BBB8F8000DFEEE3 /* total_stationList.json in Resources */ = {isa = PBXBuildFile; fileRef = B5714D742BBB8F8000DFEEE3 /* total_stationList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45B7D769BA09B06ACC7A5669 /* libPods-iOS-UIKit-CoreLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-UIKit-CoreLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5714D492BBAFCDB00DFEEE3 /* iOS-UIKit-CoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-UIKit-CoreLocation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5714D4C2BBAFCDB00DFEEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5714D4E2BBAFCDB00DFEEE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5714D502BBAFCDB00DFEEE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5714D532BBAFCDB00DFEEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5714D502BBAFCDB00DFEEE3 /* CoreLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationViewController.swift; sourceTree = "<group>"; };
 		B5714D552BBAFCDE00DFEEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5714D582BBAFCDE00DFEEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5714D5A2BBAFCDE00DFEEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5714D612BBAFE2900DFEEE3 /* CoreLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationViewModel.swift; sourceTree = "<group>"; };
+		B5714D662BBB806900DFEEE3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B5714D682BBB80CF00DFEEE3 /* CoreLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationUseCase.swift; sourceTree = "<group>"; };
+		B5714D6A2BBB811A00DFEEE3 /* BusStopInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopInfoRepository.swift; sourceTree = "<group>"; };
+		B5714D6C2BBB822D00DFEEE3 /* BusStopListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopListDTO.swift; sourceTree = "<group>"; };
+		B5714D6E2BBB842400DFEEE3 /* BusStopInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopInfoResponse.swift; sourceTree = "<group>"; };
+		B5714D702BBB883600DFEEE3 /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
+		B5714D722BBB887E00DFEEE3 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B5714D742BBB8F8000DFEEE3 /* total_stationList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = total_stationList.json; sourceTree = "<group>"; };
+		B8935FB2B11070C7E53292EC /* Pods-iOS-UIKit-CoreLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-UIKit-CoreLocation.debug.xcconfig"; path = "Target Support Files/Pods-iOS-UIKit-CoreLocation/Pods-iOS-UIKit-CoreLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		C4F547BBADF56EDCA529D1F2 /* Pods-iOS-UIKit-CoreLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-UIKit-CoreLocation.release.xcconfig"; path = "Target Support Files/Pods-iOS-UIKit-CoreLocation/Pods-iOS-UIKit-CoreLocation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A43D6CE664D65D24036EFE6 /* libPods-iOS-UIKit-CoreLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B360F8582900225C27C0F989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B7D769BA09B06ACC7A5669 /* libPods-iOS-UIKit-CoreLocation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5714D402BBAFCDB00DFEEE3 = {
 			isa = PBXGroup;
 			children = (
 				B5714D4B2BBAFCDB00DFEEE3 /* iOS-UIKit-CoreLocation */,
 				B5714D4A2BBAFCDB00DFEEE3 /* Products */,
+				E7BE4562599ED2394B09A214 /* Pods */,
+				B360F8582900225C27C0F989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +87,64 @@
 		B5714D4B2BBAFCDB00DFEEE3 /* iOS-UIKit-CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				B5714D4C2BBAFCDB00DFEEE3 /* AppDelegate.swift */,
-				B5714D4E2BBAFCDB00DFEEE3 /* SceneDelegate.swift */,
-				B5714D502BBAFCDB00DFEEE3 /* ViewController.swift */,
-				B5714D522BBAFCDB00DFEEE3 /* Main.storyboard */,
+				B5714D742BBB8F8000DFEEE3 /* total_stationList.json */,
+				B5714D5A2BBAFCDE00DFEEE3 /* Info.plist */,
 				B5714D552BBAFCDE00DFEEE3 /* Assets.xcassets */,
 				B5714D572BBAFCDE00DFEEE3 /* LaunchScreen.storyboard */,
-				B5714D5A2BBAFCDE00DFEEE3 /* Info.plist */,
+				B5714D4C2BBAFCDB00DFEEE3 /* AppDelegate.swift */,
+				B5714D4E2BBAFCDB00DFEEE3 /* SceneDelegate.swift */,
+				B5714D632BBAFE2D00DFEEE3 /* Domain */,
+				B5714D642BBAFE3400DFEEE3 /* Data */,
+				B5714D602BBAFDFE00DFEEE3 /* Presentation */,
 			);
 			path = "iOS-UIKit-CoreLocation";
+			sourceTree = "<group>";
+		};
+		B5714D602BBAFDFE00DFEEE3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B5714D652BBB805E00DFEEE3 /* Protocol */,
+				B5714D612BBAFE2900DFEEE3 /* CoreLocationViewModel.swift */,
+				B5714D502BBAFCDB00DFEEE3 /* CoreLocationViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B5714D632BBAFE2D00DFEEE3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B5714D6E2BBB842400DFEEE3 /* BusStopInfoResponse.swift */,
+				B5714D682BBB80CF00DFEEE3 /* CoreLocationUseCase.swift */,
+				B5714D702BBB883600DFEEE3 /* LocationResponse.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B5714D642BBAFE3400DFEEE3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B5714D6C2BBB822D00DFEEE3 /* BusStopListDTO.swift */,
+				B5714D6A2BBB811A00DFEEE3 /* BusStopInfoRepository.swift */,
+				B5714D722BBB887E00DFEEE3 /* LocationService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B5714D652BBB805E00DFEEE3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B5714D662BBB806900DFEEE3 /* ViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E7BE4562599ED2394B09A214 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8935FB2B11070C7E53292EC /* Pods-iOS-UIKit-CoreLocation.debug.xcconfig */,
+				C4F547BBADF56EDCA529D1F2 /* Pods-iOS-UIKit-CoreLocation.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5714D5D2BBAFCDE00DFEEE3 /* Build configuration list for PBXNativeTarget "iOS-UIKit-CoreLocation" */;
 			buildPhases = (
+				529C75D9D629BCB0751E23E7 /* [CP] Check Pods Manifest.lock */,
 				B5714D452BBAFCDB00DFEEE3 /* Sources */,
 				B5714D462BBAFCDB00DFEEE3 /* Frameworks */,
 				B5714D472BBAFCDB00DFEEE3 /* Resources */,
@@ -125,20 +206,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5714D752BBB8F8000DFEEE3 /* total_stationList.json in Resources */,
 				B5714D592BBAFCDE00DFEEE3 /* LaunchScreen.storyboard in Resources */,
 				B5714D562BBAFCDE00DFEEE3 /* Assets.xcassets in Resources */,
-				B5714D542BBAFCDB00DFEEE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		529C75D9D629BCB0751E23E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-UIKit-CoreLocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5714D452BBAFCDB00DFEEE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5714D512BBAFCDB00DFEEE3 /* ViewController.swift in Sources */,
+				B5714D672BBB806900DFEEE3 /* ViewModel.swift in Sources */,
+				B5714D712BBB883600DFEEE3 /* LocationResponse.swift in Sources */,
+				B5714D622BBAFE2900DFEEE3 /* CoreLocationViewModel.swift in Sources */,
+				B5714D6D2BBB822D00DFEEE3 /* BusStopListDTO.swift in Sources */,
+				B5714D512BBAFCDB00DFEEE3 /* CoreLocationViewController.swift in Sources */,
+				B5714D6F2BBB842400DFEEE3 /* BusStopInfoResponse.swift in Sources */,
+				B5714D732BBB887E00DFEEE3 /* LocationService.swift in Sources */,
+				B5714D692BBB80CF00DFEEE3 /* CoreLocationUseCase.swift in Sources */,
+				B5714D6B2BBB811A00DFEEE3 /* BusStopInfoRepository.swift in Sources */,
 				B5714D4D2BBAFCDB00DFEEE3 /* AppDelegate.swift in Sources */,
 				B5714D4F2BBAFCDB00DFEEE3 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +261,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5714D522BBAFCDB00DFEEE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5714D532BBAFCDB00DFEEE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5714D572BBAFCDE00DFEEE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +393,7 @@
 		};
 		B5714D5E2BBAFCDE00DFEEE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8935FB2B11070C7E53292EC /* Pods-iOS-UIKit-CoreLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,7 +404,6 @@
 				INFOPLIST_FILE = "iOS-UIKit-CoreLocation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +421,7 @@
 		};
 		B5714D5F2BBAFCDE00DFEEE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F547BBADF56EDCA529D1F2 /* Pods-iOS-UIKit-CoreLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,7 +432,6 @@
 				INFOPLIST_FILE = "iOS-UIKit-CoreLocation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

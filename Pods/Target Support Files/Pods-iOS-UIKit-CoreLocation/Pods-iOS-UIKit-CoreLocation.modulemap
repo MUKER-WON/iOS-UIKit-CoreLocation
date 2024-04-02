@@ -1,0 +1,6 @@
+module Pods_iOS_UIKit_CoreLocation {
+  umbrella header "Pods-iOS-UIKit-CoreLocation-umbrella.h"
+
+  export *
+  module * { export * }
+}
