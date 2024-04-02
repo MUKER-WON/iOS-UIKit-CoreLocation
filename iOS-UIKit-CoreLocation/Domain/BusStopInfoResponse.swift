@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 
 struct BusStopInfoResponse: Hashable, Codable {
+    
     let busStopName: String
     let busStopId: String
     let direction: String
@@ -31,6 +32,7 @@ struct BusStopInfoResponse: Hashable, Codable {
 }
 
 extension BusStopInfoResponse {
+    
     var location: CLLocation {
         .init(
             latitude: latitude,

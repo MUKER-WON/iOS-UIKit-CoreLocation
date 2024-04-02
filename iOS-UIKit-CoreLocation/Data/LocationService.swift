@@ -10,14 +10,14 @@ import CoreLocation
 import RxSwift
 
 final class LocationService: NSObject {
+    
     private let locationManager = CLLocationManager()
-    let locationResponse = BehaviorSubject<LocationResponse>(
-        value: .notAuthorized
-    )
+    let locationResponse = BehaviorSubject<LocationResponse>(value: .notAuthorized)
     
     override init() {
         super.init()
         locationManager.delegate = self
+        print("test \(locationManager.authorizationStatus)")
     }
     
     func requestAuthorize() {
@@ -26,7 +26,10 @@ final class LocationService: NSObject {
 }
 
 extension LocationService: CLLocationManagerDelegate {
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+    
+    func locationManagerDidChangeAuthorization(
+        _ manager: CLLocationManager
+    ) {
         switch manager.authorizationStatus {
         case .notDetermined, .restricted, .denied:
             locationResponse.onNext(.notAuthorized)

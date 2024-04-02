@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 
 enum LocationResponse {
+    
     case notAuthorized
     case error
     case authorized(CLLocation)

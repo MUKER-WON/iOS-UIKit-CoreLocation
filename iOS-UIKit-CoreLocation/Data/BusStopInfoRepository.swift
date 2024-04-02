@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 
 final class BusStopInfoRepository {
+    
     var responses: [BusStopInfoResponse] = []
     
     init() {

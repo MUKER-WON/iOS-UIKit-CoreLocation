@@ -8,10 +8,12 @@
 import Foundation
 
 struct BusStopListDTO: Codable {
+    
     let description: Description
     let data: [BusStopInfo]
     
     enum CodingKeys: String, CodingKey {
+        
         case description = "DESCRIPTION"
         case data = "DATA"
     }
@@ -19,11 +21,13 @@ struct BusStopListDTO: Codable {
     // MARK: - BusStopInfo
     
     struct BusStopInfo: Codable {
+        
         let stopNm, ycode, stopNo, xcode, nxtStn: String
         let stopType: String
         let nodeID: String
         
         enum CodingKeys: String, CodingKey {
+            
             case stopNm = "stop_mn"
             case ycode
             case stopNo = "stop_no"
@@ -37,10 +41,12 @@ struct BusStopListDTO: Codable {
     // MARK: - Description
     
     struct Description: Codable {
+        
         let stopType, ycode, stopNm, nodeID: String
         let stopNo, xcode, nxtStn: String
         
         enum CodingKeys: String, CodingKey {
+            
             case stopType = "STOP_TYPE"
             case ycode = "YCODE"
             case stopNm = "STOP_NM"
@@ -53,6 +59,7 @@ struct BusStopListDTO: Codable {
 }
 
 extension BusStopListDTO {
+    
     var toDomain: [BusStopInfoResponse] {
         data.compactMap { busStopInfo in
             .init(
